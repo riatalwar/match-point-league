@@ -1,0 +1,96 @@
+.about {
+  min-height: calc(100vh - 120px);
+}
+
+.about-hero {
+  background: linear-gradient(135deg, #4a7c59 0%, #2c5530 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.about-hero p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+.about-content {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 3rem;
+}
+
+.content-section {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.content-section h2 {
+  color: #2c5530;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #a8d5aa;
+  padding-bottom: 0.5rem;
+}
+
+.content-section p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.content-section ul {
+  color: #555;
+  line-height: 1.7;
+  padding-left: 1.5rem;
+}
+
+.content-section li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.content-section li::marker {
+  color: #2c5530;
+}
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .about-hero p {
+    font-size: 1.1rem;
+  }
+  
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .content-section {
+    padding: 2rem;
+  }
+  
+  .content-section h2 {
+    font-size: 1.5rem;
+  }
+}

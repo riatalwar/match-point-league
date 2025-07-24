@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/footer.css';
+import { Instagram, Facebook, Twitter, Email } from '@mui/icons-material';
 
 const Footer: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const Footer: React.FC = () => {
             <h4>Contact</h4>
             <p>
               <a href="mailto:matchpointleague2025@gmail.com" className="footer-email">
-                matchpointleague2025@gmail.com
+                <Email /> matchpointleague2025@gmail.com
               </a>
             </p>
           </div>
@@ -24,13 +25,13 @@ const Footer: React.FC = () => {
             <h4>Follow Us</h4>
             <div className="social-links">
               <a href="#" className="social-link" aria-label="Facebook">
-                Facebook
+                <Facebook />
               </a>
               <a href="#" className="social-link" aria-label="Instagram">
-                Instagram
+                <Instagram />
               </a>
               <a href="#" className="social-link" aria-label="Twitter">
-                Twitter
+                <Twitter />
               </a>
             </div>
           </div>

@@ -12,6 +12,7 @@ const Navbar: React.FC = () => {
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
           <img src={mplLogo} alt="Match Point League" className="navbar-logo-img" />
+          <span>Match Point League</span>
         </Link>
         
         <div className="navbar-menu">
@@ -59,9 +60,15 @@ const Navbar: React.FC = () => {
             )}
           </div>
           
-          <Link to="/login" className="navbar-link">
+          <Link to="/login" className="navbar-cta">
             Login
           </Link>
+        </div>
+        
+        <div className="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </nav>

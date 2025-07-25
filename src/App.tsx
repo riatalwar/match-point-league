@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './templates/Home';
 import About from './templates/About';
+import Browse from './templates/Browse';
 import './App.css';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             {/* Placeholder routes for future pages */}
-            <Route path="/tennis/tournaments" element={<div>Tennis Tournaments - Coming Soon</div>} />
+            <Route path="/tennis/tournaments" element={<Browse />} />
             <Route path="/tennis/community" element={<div>Tennis Community - Coming Soon</div>} />
             <Route path="/pickleball/tournaments" element={<div>Pickleball Tournaments - Coming Soon</div>} />
             <Route path="/pickleball/community" element={<div>Pickleball Community - Coming Soon</div>} />

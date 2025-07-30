@@ -1,11 +1,11 @@
 .navbar {
-  background-color: var(--background-primary);
+  background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid var(--border-color);
   position: sticky;
   top: 0;
   z-index: 1000;
-  backdrop-filter: blur(8px);
-  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-sm);
 }
 
 .navbar-container {
@@ -21,10 +21,11 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-weight: 700;
+  font-family: var(--font-header);
+  font-weight: 800;
   font-size: 1.5rem;
   color: var(--text-primary);
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .navbar-logo:hover {
@@ -32,12 +33,13 @@
 }
 
 .navbar-logo-img {
-  height: 40px;
-  width: 40px;
-  border-radius: var(--radius-md);
+  height: 45px;
+  width: 45px;
+  border-radius: var(--radius-lg);
   object-fit: cover;
   margin-right: 0.75rem;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
 }
 
 .navbar-logo:hover .navbar-logo-img {
@@ -137,11 +139,13 @@
 
 .navbar-cta {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--pearl-white);
   padding: 0.75rem 1.5rem;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   font-weight: 600;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: 2px solid var(--primary-color);
 }
 
 .navbar-cta:hover {

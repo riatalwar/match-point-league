@@ -1,8 +1,10 @@
 .footer {
-  background-color: #1a1a1a;
-  color: white;
-  padding: 2rem 0 1rem;
+  background: linear-gradient(135deg, var(--glossy-black) 0%, var(--cool-gray-dark) 100%);
+  color: var(--pearl-white);
+  padding: 3rem 0 1.5rem;
   margin-top: auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .footer-container {
@@ -19,17 +21,19 @@
 }
 
 .footer-section h3 {
-  color: var(--primary-color);
+  color: var(--accent-color);
   margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-family: var(--font-header);
 }
 
 .footer-section h4 {
-  color: var(--primary-color);
+  color: var(--accent-color);
   margin-bottom: 1rem;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 600;
+  font-family: var(--font-header);
 }
 
 .footer-section p {
@@ -43,18 +47,18 @@
 }
 
 .footer-email {
-  color: var(--primary-color);
+  color: var(--accent-color);
   text-decoration: none;
   font-weight: 500;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
 }
 
 .footer-email:hover {
-  color: white;
-  transform: translateY(-1px);
+  color: var(--pearl-white);
+  transform: translateY(-2px);
 }
 
 .social-links {
@@ -64,23 +68,25 @@
 }
 
 .social-link {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-weight: 500;
-  padding: 0.75rem 1rem;
-  border-radius: var(--radius-md);
+  padding: 0.875rem;
+  border-radius: var(--radius-full);
   background-color: rgba(255, 255, 255, 0.1);
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
 }
 
 .social-link:hover {
-  color: white;
-  background-color: var(--primary-color);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  color: var(--glossy-black);
+  background-color: var(--accent-color);
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: var(--shadow-lg);
 }
 
 .social-link::before {
